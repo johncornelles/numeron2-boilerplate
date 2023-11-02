@@ -45,7 +45,6 @@ function random_num3(){
 
     let randomChoice = Math.ceil(Math.random() * 5)
     let num3;
-    console.log(randomChoice)
     if(randomChoice == 1) {
         operator = '+'
         num3 = num1 + num2;
@@ -84,8 +83,8 @@ plus.onclick = () => {
         random_two()
         timelimit = 20;
     }
-
-    updatescore()
+    else updatescore()
+    
 }
 
 minus.onclick = () => {
@@ -94,7 +93,7 @@ minus.onclick = () => {
         random_two()
         timelimit = 20;
     }
-    updatescore()
+    else updatescore()
 }
 
 multiply.onclick = () => {
@@ -103,7 +102,7 @@ multiply.onclick = () => {
         random_two()
         timelimit = 20;
     }
-    updatescore()
+    else updatescore()
 }
 
 divide.onclick = () => {
@@ -112,7 +111,7 @@ divide.onclick = () => {
         scoredata_game.score += 1;
         timelimit = 20;
     }
-    updatescore()
+    else updatescore()
 }
 
 mod.onclick = () => {
@@ -121,5 +120,5 @@ mod.onclick = () => {
         scoredata_game.score += 1;
         timelimit = 20;
     }
-    updatescore()
+    else updatescore()
 }
